@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.CSS">
+</head>
+
+<body>
+<script src="script.JS"></script>
+<div id="form">
+<form>
+    <label for="capital">Capital:</label><br>
+    <input type="number" id="capital" name="capital"><br><br>
+
+    <label for="taxa">Taxa de Juros (%):</label><br>
+    <input type="number" id="taxa" name="taxa" step="0.01"><br><br>
+
+    <label for="tempo">Tempo (anos):</label><br>
+    <input type="number" id="tempo" name="tempo"><br><br>
+   
+    <button type="button" onclick="calcular()">Calcular Juros</button> <br> <br>
+    <button type="button" onclick="limparFormulario()">Limpar</button><br><br>
+    <a href="explicacao.HTML" target="_blank">
+    <button type="button" onclick="Explicacao()">Explicação</button><br><br>
+    </a>
+</form>
+</div>
+<div id="resultados">
+    <h3>Resultados:</h3><br>
+    <p><strong>Juros Simples:</strong> R$ <span id="jurosSimples">0.00</span></p><br>
+    <p><strong>Juros Compostos:</strong> R$ <span id="jurosCompostos">0.00</span></p> <br>
+    <p><strong>Montante (Juros Simples):</strong> R$ <span id="montanteSimples">0.00</span></p><br>
+    <p><strong>Montante (Juros Compostos):</strong> R$ <span id="montanteCompostos">0.00</span></p>
+</div>
+
+</body>
+</html>
